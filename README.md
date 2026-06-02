@@ -1,79 +1,175 @@
-🔍 Overview:
-DarkPattern-Forensics is an automated system designed to detect and analyze deceptive UI/UX practices in e-commerce platforms. These practices, known as dark patterns, manipulate user behavior through tactics such as hidden costs, false urgency, and misleading design.
+# DarkPattern-Forensics
 
-This project leverages BERT-based Natural Language Processing (NLP) and web automation to identify such patterns and generate a structured risk assessment, promoting transparency and user protection in digital commerce.
+An AI-driven forensic analysis platform that detects and evaluates deceptive user interface practices in e-commerce websites using Natural Language Processing, machine learning, and web automation.
 
-✨ Key Features:
-🌐 Live Web Scraping
-Extracts real-time DOM structure and textual data from e-commerce websites using Selenium/Playwright.
+---
 
-🤖 AI-Powered Detection:
-Utilizes a fine-tuned BERT model to classify dark patterns such as:
-Sneak-into-Basket, False Urgency, Hidden Costs, etc.
+## Overview
 
-⚖️ Forensic Risk Assessment:
-Assigns High, Medium, or Low risk levels based on the severity and psychological impact of detected patterns.
+Dark patterns are manipulative design techniques used to influence user decisions through misleading interfaces, hidden information, and psychological pressure. DarkPattern-Forensics automates the identification of such practices by combining web scraping, NLP-based classification, and forensic risk assessment.
 
-📊 Interactive Dashboard:
-A React-based interface for visualizing detected patterns, supporting evidence, and risk insights.
+The system analyzes website content, identifies deceptive patterns, and generates risk reports that promote transparency, ethical design, and consumer protection.
 
-🛠️ Tech Stack:
-Frontend: React.js, Tailwind CSS, Lucide Icons
-Backend: Flask (Python), RESTful APIs
-Machine Learning: PyTorch, HuggingFace Transformers (BERT), Scikit-learn
-Automation: Selenium WebDriver / Playwright
+---
 
-🚀 Getting Started:
-Prerequisites:
-Python 3.8+
-Node.js & npm
+## Features
 
-Installation:
-1. Clone the Repository:
+* Automated website analysis
+* Live content extraction using browser automation
+* BERT-based dark pattern classification
+* Detection of deceptive UX strategies
+* Risk severity assessment
+* Interactive analytics dashboard
+* Evidence-based reporting system
+
+---
+
+## Dark Patterns Detected
+
+* Sneak Into Basket
+* False Urgency
+* Hidden Costs
+* Confirm Shaming
+* Scarcity Tactics
+* Misleading Interface Design
+* Forced Action
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+* Lucide Icons
+
+### Backend
+
+* Flask
+* REST APIs
+
+### Machine Learning
+
+* PyTorch
+* Hugging Face Transformers
+* BERT
+* Scikit-Learn
+
+### Automation
+
+* Selenium
+* Playwright
+
+---
+
+## Architecture
+
+```text
+DarkPattern-Forensics/
+├── frontend/
+├── backend/
+├── ml-models/
+├── reports/
+├── datasets/
+└── README.md
+```
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
 git clone https://github.com/YOUR_USERNAME/DarkPattern-Forensics.git
 cd DarkPattern-Forensics
+```
 
-3. Setup Backend (Flask):
+### Backend Setup
+
+```bash
 cd backend
+
 python -m venv venv
 
-Activate virtual environment:
-Windows:
+# Windows
 venv\Scripts\activate
 
-Mac/Linux:
+# Linux/Mac
 source venv/bin/activate
 
-Install dependencies and run server:
 pip install -r requirements.txt
 python app.py
+```
 
-3. Setup Frontend (React):
-cd ../frontend
+### Frontend Setup
+
+```bash
+cd frontend
+
 npm install
 npm start
+```
 
-📊 Methodology:
-The system follows a structured four-stage forensic pipeline:
+---
 
-Extraction:
-Collects UI elements and textual data from the target website.
+## Methodology
 
-Analysis:
-Processes extracted content using a trained BERT classifier.
+### 1. Data Extraction
 
-Assessment:
-Evaluates the presence and severity of dark patterns to compute a risk score.
+Website content and UI elements are collected using browser automation tools.
 
-Reporting:
-Presents findings through an interactive dashboard with visual insights.
+### 2. Pattern Analysis
 
-📜 License:
-This project is licensed under the MIT License. See the LICENSE file for details.
+Extracted text is processed through a fine-tuned BERT model.
 
-👩‍💻 Team:
-Lead Developer: Sakshi Kadadekar
-Team Members: Soumya Pandey, Veenu Sharma, Vedika Bhaskarwar
-Supervisor: Mrs. Arpita Meet Vaidya
+### 3. Risk Assessment
 
+Detected dark patterns are evaluated and assigned severity scores.
 
+### 4. Reporting
+
+Findings are visualized through an interactive dashboard and forensic reports.
+
+---
+
+## Future Enhancements
+
+* Multi-language detection support
+* Browser extension integration
+* Explainable AI reporting
+* Large-scale website auditing
+* Regulatory compliance assessment
+
+---
+
+## Team
+
+Lead Developer:
+Sakshi Kadadekar
+
+Team Members:
+
+* Soumya Pandey
+* Veenu Sharma
+* Vedika Bhaskarwar
+
+Project Supervisor:
+Mrs. Arpita Meet Vaidya
+
+---
+
+## Author
+
+Sakshi Kadadekar
+
+GitHub: https://github.com/sakshi-kadadekar
+
+LinkedIn: https://www.linkedin.com/in/sakshi-kadadekar-231311365
+
+---
+
+## License
+
+MIT License
